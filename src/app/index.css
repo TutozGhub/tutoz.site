@@ -1,0 +1,25 @@
+.foto{
+    min-width: none;
+    width: 50%;
+    height: auto;
+    border-radius: 100%;
+    margin: 2rem 0;
+}
+.cv{
+    flex-wrap: wrap;
+    border-radius: 15px;
+    background-color: #eee;
+    padding: 3rem;
+}
+.col-foto{
+    border-radius: 15px;
+    background-color: #eee;
+    padding: 1rem;
+}
+
+@media (width <= 991px) {
+    .foto{
+        width: 90%;
+        height: auto;
+    }
+}
