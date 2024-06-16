@@ -5,7 +5,7 @@ nav{
     background-color: var(--header);
     
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .navbar{
     max-width: var(--max-width) !important;
@@ -28,5 +28,10 @@ nav{
 @media (width <= 991px) {
     .nav-link{
         text-align: right;
+    }
+}
+@media (width <= 425px) {
+    nav{
+        margin-top: auto;
     }
 }

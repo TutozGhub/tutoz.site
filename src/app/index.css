@@ -1,25 +1,124 @@
 .foto{
     min-width: none;
-    width: 50%;
+    width: 20% !important;
     height: auto;
     border-radius: 100%;
     margin: 2rem 0;
 }
 .cv{
     flex-wrap: wrap;
-    border-radius: 15px;
-    background-color: #eee;
     padding: 3rem;
 }
+.main, main, body{
+    overflow-x: hidden;
+}
+.main{
+    max-width: 100%;
+}
+.espacio{
+    height: 1000px;
+    background-color: #fff;
+}
+.devices{
+    display: flex;
+    max-width: 100%;
+    height: 800px;
+    background-color: #fff;
+
+    justify-content: center;
+    align-items: flex-end;
+    overflow-x: hidden;
+
+    :first-child{
+        height: auto;
+        width: 100%;
+    }
+}
+.descripcion{
+    color: var(--text-reverse);
+    font-weight: 900;
+}
+.background{
+    width: 100dvw;
+    height: 150%;
+    max-height: 40rem;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    transform: translate(0, 0);
+
+    margin: 0;
+    background: var(--tutoz);
+}
+
 .col-foto{
     border-radius: 15px;
-    background-color: #eee;
     padding: 1rem;
+}
+
+.stacks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.stack{
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    align-self: center;
+    display: flex;
+    height: 15rem !important;
+
+    &.m{
+        display: none;
+    }
 }
 
 @media (width <= 991px) {
     .foto{
-        width: 90%;
+        max-width: 15rem !important;
+        width: 40% !important;
         height: auto;
+    }
+    .devices{
+        :first-child{
+            height: auto;
+            width: 160%;
+        }
+    }
+}
+
+@media (width <= 500px) {
+
+    .foto{
+        margin-top: 0;
+        width: 70% !important;
+        height: auto;
+    }
+    .stacks{
+        flex-direction: column;
+    }
+    .stack{
+        margin-bottom: 4rem;
+        height: 120px !important;
+        &:last-child{
+            margin-bottom: 1rem;
+        }
+    }
+    .descripcion{
+        font-size: medium;
+    }
+}
+@media (width <= 425px) {
+    .stack{
+        &.d{
+            display: none;
+        }
+        &.m{
+            display: block;
+        }
+        &:last-child{
+            margin-bottom: 3rem;
+        }
     }
 }
