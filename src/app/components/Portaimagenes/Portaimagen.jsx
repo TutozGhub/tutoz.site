@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import './portaimagen.css'
+import './Portaimagen.css'
 
 export function Portaimagen({titleText="", text="", src="", alt="", title="", reverse=false}) {
   return (
