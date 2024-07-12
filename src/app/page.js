@@ -88,7 +88,7 @@ export default function Page() {
               </div>
         </div>
       </section>
-      <section className="espacio">
+      <section className="espacio d-flex align-items-center">
         <Portaimagen
         src="IMG/172.png"
         alt="instituto"
