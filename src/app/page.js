@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useMemo, useState } from "react";
 import { getGhUser } from '&/helpers/gh'
+import {Portaimagen} from '&/Portaimagenes/Portaimagen'
 import Image from "next/image";
 import './index.css'
 
@@ -48,7 +49,7 @@ export default function Page() {
               <div className="card-body">
                 <ul className="list-group list-group-flush stacks">
             {/* Stack web */}
-                  <div class="stack">
+                  <div className="stack">
                     <h4 className="mb-4">Web stack</h4>
                     <Image className="stack d"
                     src={links.web(4)}
@@ -66,7 +67,7 @@ export default function Page() {
                     />
                   </div>
             {/* Stack desktop */}
-                  <div class="stack">
+                  <div className="stack">
                     <h4 className="mb-4">Desktop stack</h4>
                     <Image className="stack d"
                     src={links.desktop(3)}
@@ -87,10 +88,24 @@ export default function Page() {
               </div>
         </div>
       </section>
-      <section className="espacio"></section>
-      <section className="background">
-      <h5 className="descripcion">footer en progreso...</h5>
-      <h5 className="descripcion">:p</h5>
+      <section className="espacio">
+        <Portaimagen
+        src="IMG/172.png"
+        alt="instituto"
+        title="ISFT 172"
+        titleText="ISFT N°172"
+        text={<>
+          <h5 className="mb-3">
+            En 2024 concluí mis estudios en el <strong>Instituto Superior de Formación Técnica 172</strong>.
+            El ISFT N°172 forma a profesionales técnicos preparados para que
+            puedan insertarse en breve tiempo en el campo laboral.
+          </h5>
+          <h5 className="mb-3">
+            Gracias a los conocimientos que adquirí (arquitectura de sistemas, lógica de programación,
+            bases de datos, entre muchos otros), pude seguir aprendiendo por mi cuenta de forma autodidacta.
+          </h5>
+        </>}
+        />
       </section>
     </section>
   );

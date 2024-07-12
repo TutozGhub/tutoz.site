@@ -1,0 +1,21 @@
+.btn{
+    --color1: #fff;
+    --color2: var(--tutoz);
+    --btnSize: 50px;
+
+    width: var(--btnSize);
+    height: var(--btnSize);
+
+    border-radius: 100%;
+    transition: 100ms ease-in;
+
+    border: 1px solid var(--color1);
+    background-color: var(--color2);
+    color: var(--color1);
+
+    &:hover{
+        border: 1px solid var(--color1);
+        background-color: var(--color1);
+        color: var(--color2);
+    }
+}

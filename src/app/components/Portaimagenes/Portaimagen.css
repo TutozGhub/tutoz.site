@@ -1,0 +1,36 @@
+.contenedor{
+    display: flex;
+}
+.contenedor-reverse{
+    flex-direction: row-reverse;
+}
+.contenedor-ancho{
+    max-width: 75%;
+    width: 50%;
+}
+.img{
+    margin: 0 auto;
+    width: 75%;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 20px 100px;
+}
+
+@media (width < 1000px) {
+    .img{
+        width: 60%;
+    }
+    .contenedor, .contenedor-reverse{
+        flex-direction: column;
+    }
+    .contenedor-ancho{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (width < 600px) {
+    .img{
+        width: 100%;
+    }
+}
